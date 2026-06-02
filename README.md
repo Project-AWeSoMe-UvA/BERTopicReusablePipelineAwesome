@@ -1,5 +1,4 @@
 # BERTopic Reusable Pipeline
-Topic model your social media data with this reusable BERTopic pipeline!
 
 **Project:** [Project AWeSoMe](https://project-awesome.nl/)
 

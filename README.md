@@ -9,6 +9,19 @@ Topic model your social media data with this reusable BERTopic pipeline!
 
 A modular BERTopic pipeline for large-scale social media text corpora. The pipeline is split across four notebooks that run in sequence, with a shared `config.py` for all file paths.
 
+## Quickstart
+
+```powershell
+git clone https://github.com/ikv-awesome/BERTopicReusablePipeline.git
+cd BERTopicReusablePipeline
+py -3.11 -m venv .venv
+.venv\Scripts\activate
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+pip install -r requirements.txt
+```
+
+Then place your CSV in `input/data/` and run the notebooks in order (see [Usage](#usage)).
+
 ## Requirements
 
 ### Environment setup
@@ -16,7 +29,7 @@ The pipeline requires Python 3.11.
 
 **1. Create the virtual environment**
 
-Open powershell in the BERTopic directory:
+Open PowerShell in the BERTopic directory:
 - Right click with your mouse
 - Select "Open in Terminal"
 
@@ -24,7 +37,6 @@ Run:
 ```powershell
 py -3.11 -m venv .venv
 ```
-
 
 **2. Activate the environment**
 
@@ -48,6 +60,8 @@ python -m pip install --upgrade pip
 ```powershell
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
 ```
+
+> PyTorch must be installed separately before `requirements.txt` to ensure the correct CUDA 12.1 build is used. Installing it from PyPI will result in a CPU-only version.
 
 **5. Install remaining dependencies**
 
@@ -92,8 +106,19 @@ project/
     ├── checkpoint files/            ← Checkpoint files for stopping/reloading time-intensive steps
     ├── figures/                     ← Saved plots
     ├── topic info files/            ← Topic info tables (used for manual coding)
-    └── topic model/                 ← saved BERTopic model, topic assignments
+    └── topic model/                 ← Saved BERTopic model, topic assignments
 ```
+
+## Usage
+
+Run the notebooks in order:
+
+1. **`1_data_preparation.ipynb`** — load your CSV and preprocess it into documents
+2. **`2_embeddings_gridsearch.ipynb`** — generate embeddings and run hyperparameter grid search
+3. **`3_topic_modelling.ipynb`** — fit the BERTopic model
+4. **`4_output_exploration.ipynb`** — explore and evaluate the topic output
+
+All file paths are managed centrally in `config.py` — you should not need to change paths inside the notebooks themselves.
 
 ## Adapting to your own data
 

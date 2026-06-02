@@ -11,8 +11,8 @@ A modular BERTopic pipeline for large-scale social media text corpora. The pipel
 ## Quickstart
 
 ```powershell
-git clone https://github.com/Project-AWeSoMe-UvA/BERTopicReusablePipeline.git
-cd BERTopicReusablePipeline
+git clone https://github.com/Project-AWeSoMe-UvA/BERTopicReusablePipelineAwesome.git
+cd BERTopicReusablePipelineAwesome
 py -3.11 -m venv .venv
 .venv\Scripts\activate
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121

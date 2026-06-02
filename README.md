@@ -2,7 +2,9 @@
 Topic model your social media data with this reusable BERTopic pipeline!
 
 **Project:** [Project AWeSoMe](https://project-awesome.nl/)
+
 **Authors:** Inga Vondenhof 
+
 **Last updated:** May 2026
 
 A modular BERTopic pipeline for large-scale social media text corpora. The pipeline is split across four notebooks that run in sequence, with a shared `config.py` for all file paths.

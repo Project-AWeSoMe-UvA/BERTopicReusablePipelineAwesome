@@ -11,7 +11,7 @@ A modular BERTopic pipeline for large-scale social media text corpora. The pipel
 ## Quickstart
 
 ```powershell
-git clone https://github.com/ikv-awesome/BERTopicReusablePipeline.git
+git clone https://github.com/Project-AWeSoMe-UvA/BERTopicReusablePipeline.git
 cd BERTopicReusablePipeline
 py -3.11 -m venv .venv
 .venv\Scripts\activate

@@ -1,4 +1,5 @@
-# BERTopic Pipeline Read Me
+# BERTopic Reusable Pipeline
+Topic model your social media data with this reusable BERTopic pipeline!
 
 **Project:** [Project AWeSoMe](https://project-awesome.nl/)
 
@@ -6,7 +7,7 @@
 
 **Last updated:** May 2026
 
-A modular BERTopic pipeline for large-scale text corpora, ready to be used. The pipeline is split across four notebooks that run in sequence, with a shared `config.py` for all file paths.
+A modular BERTopic pipeline for large-scale social media text corpora. The pipeline is split across four notebooks that run in sequence, with a shared `config.py` for all file paths.
 
 ## Requirements
 

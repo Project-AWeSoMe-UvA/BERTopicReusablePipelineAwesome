@@ -119,6 +119,19 @@ Run the notebooks in order:
 
 All file paths are managed centrally in `config.py` — you should not need to change paths inside the notebooks themselves.
 
+## Citation
+
+If you use this code in your research, please cite:
+
+```bibtex
+@article{
+  title={What’s on Their For You Page? A Large-Scale Computational Approach to Analyzing Adolescents’ TikTok Archives Through Hashtag Topic Modeling},
+  author={Dr. Amber van der Wal, Inga Vondenhof, Konrad Mikalauskas, Dr. Rebecca Godard, Kfir Zoini, Dr. Felicia Loecherbach, Dr. Ine Beyens},
+  journal={Computational Communication Research},
+  year={2026}
+}
+```
+
 ## Adapting to your own data
 
 **Minimum changes required to run on a new dataset:**
